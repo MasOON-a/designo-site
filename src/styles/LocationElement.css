@@ -1,0 +1,102 @@
+.location-article{
+    margin: 2rem 12%;
+}
+.location-article article{
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+}
+.location-article .r .img-cont{
+    margin-right: 1rem;
+}
+.location-article .l .img-cont{
+    margin-left: 1rem;
+}
+.location-article article .text-cont{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem 4.5%;
+    background: left/contain url(../assets/shared/desktop/bg-pattern-two-circles.svg) hsla(11, 100%, 80%, .3);
+    background-repeat: no-repeat;
+    border-radius: .75rem;
+}
+.location-article article .text-cont h2{
+    color: hsl(11, 73%, 66%);
+}
+.location-article article .text-cont .l-cont{
+    margin-right: 2rem;
+}
+.location-article article .text-cont .details-cont{
+    display: flex;
+}
+.location-article article .img-cont{
+    display: flex;
+    border-radius: .75rem;
+    overflow: hidden;
+}
+.location-article article .img-cont img{
+    width: 100%;
+    height: 100%;
+
+}
+
+@media screen and (max-width: 1100px){
+    .location-article{
+        margin: 2rem 8% 0rem;
+    }
+    .location-article article{
+        flex-direction: column-reverse;
+    }
+    .location-article .r .img-cont{
+        margin-right: unset;
+    }
+    .location-article .l .img-cont{
+        margin-left: unset;
+    }
+    .location-article article .img-cont{
+        margin-bottom: 1rem;
+    }
+    .location-article article .text-cont{
+        padding: 3rem 8%;
+    }
+    .location-article article .text-cont .details-cont{
+        width: 100%;
+        display: flex;
+    }
+    .location-article article .text-cont h2{
+        margin-bottom: 1rem;
+    }
+    .location-article article .text-cont .l-cont{
+        margin-right: 17.5%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .location-article{
+        margin: 0;
+    }
+    .location-article article .img-cont{
+        border-radius: .0;
+        margin-bottom: 0;
+    }
+    .location-article article .text-cont{
+        padding: 5rem 2rem;
+        background: center/500px 250px url(../assets/shared/desktop/bg-pattern-two-circles.svg) hsla(11, 100%, 80%, .3);
+        background-repeat: no-repeat;
+        border-radius: 0;
+        text-align: center;
+    }
+    .location-article article .text-cont h2{
+        color: hsl(11, 73%, 66%);
+    }
+    .location-article article .text-cont .l-cont{
+        margin-right: unset;
+        margin-bottom: 1rem;
+    }
+    .location-article article .text-cont .details-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+}

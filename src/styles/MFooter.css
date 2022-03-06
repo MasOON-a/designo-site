@@ -1,0 +1,101 @@
+.talk-cont{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    border-radius: .5rem;
+    background: repeat center 150px/300px url(../assets/shared/desktop/bg-pattern-small-circle.svg), hsl(11, 73%, 66%);
+    color: white;
+    transform: translateY(6rem);
+    z-index: 0;
+}
+.talk-cont .layer-one{
+    width: 65%;
+}
+.footer{
+    padding: 6rem 12% 2rem;
+    background-color:  hsl(270, 3%, 11%);
+}
+.footer-lyr-one{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-lyr-one .logo-cont img{
+    width: 200px;
+}
+.footer-lyr-one .link-cont .link{
+    text-decoration: none;
+    color: hsl(210, 17%, 95%);
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+.footer-lyr-one .link-cont .link:hover{
+    text-decoration: underline;
+}
+.footer hr{
+    border: 1px solid hsla(210, 17%, 95%, .5);
+    margin: 2rem 0;
+}
+.footer-lyr-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer-lyr-two p{
+    color: hsla(210, 17%, 95%, .5);
+}
+.footer-lyr-two img{
+    margin-right: .75rem;
+    transition: 150ms ease;
+}
+.footer-lyr-two img:hover{
+    filter: brightness(1.25);
+}
+
+@media screen and (max-width: 750px){
+    .footer-lyr-one{
+        flex-direction: column;
+        position: relative;
+    }
+    .footer hr{
+        margin: 2rem 0 11rem 0;
+    }
+    .footer-lyr-one .logo-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-lyr-one .link-cont{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        transform: translateY(5.5rem);
+    }
+    .footer-lyr-one .link-cont .link{
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+    .footer-lyr-two{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-lyr-two p, .footer-lyr-two div{
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 1100px){
+    .talk-cont{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .talk-cont .layer-one{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+@import './styles/MNav.css';
+@import './styles/HomeHeader.css';
+@import './styles/MPageHead.css';
+@import './styles/MProjectWindow.css';
+@import './styles/MDesignLinks.css';
+@import './styles/HomeInfo.css';
+@import './styles/MFooter.css';
+
+@import './styles/AboutArticle.css';
+@import './styles/MLocations.css';
+@import './styles/AboutHead.css';
+
+@import './styles/LocationElement.css';
+
+@import './styles/ContactHead.css';
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+}
+
+.pad{
+  padding: 2rem 12%;
+}
+.mar{
+  margin: 2rem 12%;
+}
+
+h1{
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: medium;
+}
+h2{
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  font-weight: medium;
+}
+h3{
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+  font-weight: medium;
+}
+p{
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.btn-light{
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: .25rem;
+  padding: 1rem;
+  transition: 200ms ease;
+}
+.btn-light:hover{
+  color: white;
+  background-color: hsl(11, 100%, 80%);
+}
+.btn-dark{
+  background-color: hsl(11, 73%, 66%);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: .25rem;
+  padding: 1rem;
+  transition: 200ms ease;
+}
+.btn-dark:hover{
+  background-color: hsl(11, 100%, 80%);
+}
+
+input{
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  padding: .75rem;
+  color: white;
+  font-size: 16px;
+}
+input:focus{
+  border-bottom: 2px solid white;
+  margin-bottom: 9px;
+  outline: none;
+}
+::placeholder{
+  color: hsla(0, 0%, 100%, .75);
+  opacity: 1;
+}
+::-ms-input-placeholder{
+  color: hsla(0, 0%, 100%, .75);
+}
+
+.windows-cont{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  column-gap: 2%;
+  row-gap: 1rem;
+}
+
+@media screen and (max-width: 1100px){
+  .pad{
+    padding: 2rem 8%;
+  }
+  .mar{
+    margin: 2rem 8%;
+  }
+  .windows-cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    column-gap: unset;
+    row-gap: unset;
+  }
+}

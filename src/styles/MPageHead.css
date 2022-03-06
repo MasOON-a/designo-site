@@ -1,0 +1,31 @@
+.design-head{
+    background: repeat center 100px/250px url(../assets/shared/desktop/bg-pattern-small-circle.svg), hsl(11, 73%, 66%);
+    color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    margin: 2rem 12%;
+}
+.design-head h2{
+    font-weight: 400;
+}
+.design-head p{
+    width: 60%;
+    margin: 2rem auto 0;
+}
+
+@media screen and (max-width: 1100px){
+    .design-head{
+        margin: 2rem 8%;
+    }
+}
+@media screen and (max-width: 600px){
+    .design-head{
+        padding: 3rem 1.5rem;
+        margin: 0;
+        border-radius: 0;
+    }
+    .design-head p{
+        width: auto;
+    }
+}

@@ -1,0 +1,103 @@
+.contact-head{
+    display: flex;
+    margin: 2rem 12%;
+    padding: 4rem;
+    background: left/300px 300px url(../assets/shared/desktop/bg-pattern-small-circle.svg) hsl(11, 73%, 66%);
+    background-repeat: no-repeat;
+    border-radius: .5rem;
+}
+.contact-head .text-cont{
+    width: 60%;
+    padding: 4rem 4rem 4rem 0;
+    color: white;
+}
+.contact-head .text-cont h1{
+    margin-bottom: 2rem;
+}
+.contact-head .text-cont p{
+   color: hsla(0,0%,100%, .75)
+}
+.contact-head form{
+    width: 40%;
+}
+.contact-head form .input-cont{
+    position: relative;
+}
+.contact-head form input{
+    width: 100%;
+}
+.contact-head form .err{
+    position: absolute;
+    top: .75rem;
+    right: 0;
+    color: white;
+    background-color: hsl(11, 73%, 66%);
+    display: none;
+    align-items: center;
+}
+.contact-head form .rejected{
+    display: flex !important;
+}
+.contact-head form .err img{
+    margin-left: 1rem;
+}
+.submit{
+    float: right;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    padding: 1rem 2.5rem;
+    transition: 200ms ease;
+  
+    appearance: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.submit:hover{
+    color: white;
+    background-color: hsl(11, 100%, 80%);
+}
+
+@media screen and (max-width: 1100px){
+    .contact-head{
+        flex-direction: column;
+        margin: 2rem 8%;
+        padding: 4rem;
+        background: left/600px 600px url(../assets/shared/desktop/bg-pattern-small-circle.svg) hsl(11, 73%, 66%);
+        background-repeat: no-repeat;
+    }
+    .contact-head .text-cont{
+        width: 100%;
+        padding: 4rem 0;
+    }
+    .contact-head form{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .contact-head{
+        margin: 0 0 4rem 0;
+        padding: 4rem 1.5rem;
+        background: left/600px 600px url(../assets/shared/desktop/bg-pattern-small-circle.svg) hsl(11, 73%, 66%);
+        background-repeat: no-repeat;
+        border-radius: 0;
+    }
+    .contact-head .text-cont{
+        padding: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .contact-head form{
+        width: 100%;
+    }
+    .submit-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
