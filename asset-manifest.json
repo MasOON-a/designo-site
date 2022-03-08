@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/designo-site/static/css/main.cba96bdb.css",
-    "main.js": "/designo-site/static/js/main.83541ceb.js",
+    "main.js": "/designo-site/static/js/main.e60041d1.js",
     "static/media/image-change.jpg": "/designo-site/static/media/image-change.3051c97c1dcc2c751755.jpg",
     "static/media/image-boxed-water.jpg": "/designo-site/static/media/image-boxed-water.9348f4ace8db6ac37e27.jpg",
     "static/media/image-photon.jpg": "/designo-site/static/media/image-photon.02f662d755840ae8aad5.jpg",
@@ -45,10 +45,10 @@
     "static/media/icon-error.svg": "/designo-site/static/media/icon-error.fd5e1ede84a613c61261af737d2bf0c7.svg",
     "static/media/icon-right-arrow.svg": "/designo-site/static/media/icon-right-arrow.7046cd1b7a4a6072a89674a25348f942.svg",
     "main.cba96bdb.css.map": "/designo-site/static/css/main.cba96bdb.css.map",
-    "main.83541ceb.js.map": "/designo-site/static/js/main.83541ceb.js.map"
+    "main.e60041d1.js.map": "/designo-site/static/js/main.e60041d1.js.map"
   },
   "entrypoints": [
     "static/css/main.cba96bdb.css",
-    "static/js/main.83541ceb.js"
+    "static/js/main.e60041d1.js"
   ]
 }
