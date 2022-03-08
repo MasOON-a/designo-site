@@ -12,7 +12,7 @@ import './App.css';
 function App() {
 
   return (
-      <Router>
+      <Router basename="/designo-site">
         <Routes>
           <Route path="/" element={<Home />} exact></Route>
           <Route path="/web-design" element={<Web />} exact></Route>
